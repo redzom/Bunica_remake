@@ -554,7 +554,7 @@ h2 span {
     
     }
 
-    .half1, .half2 {
+    .half1 {
         width: min-content;
         flex: 0 0 auto;
         padding: 10px 0;
@@ -562,12 +562,14 @@ h2 span {
         align-self: center;
     }
     .half2 {
-        width: max-content;
-        flex: 0 0 auto;
+        flex: 0 1 auto;
         padding: 10px 0;
 
         align-self: center;
         text-align: center;
+    }
+    .copy {
+        width: auto;
     }
 
 
