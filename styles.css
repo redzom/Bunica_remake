@@ -419,7 +419,7 @@ h2 span {
     font-weight: 300;
     color: rgba(255, 255, 255, .8);
 }
-.half2 a {
+.half2 span p a {
     font-size: 13px;
     color: orangered;
     font-weight: 500;
