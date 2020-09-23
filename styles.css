@@ -547,10 +547,19 @@ h2 span {
 @media screen and (max-width: 767px) {
     #navbar {
         top: 0;
-        left: 0;
-        background-color: #0e3456;
+        right: 0;
+        position: absolute;
+
         width:100%;
+        
+        background-color: #0e3456;
         z-index: 99;
+
+    }
+
+    .navbar-nav, .collapse {
+        background-color: #0e3456;
+        width: 100%;
     }
     #logoSmall {
         display: block;

@@ -651,11 +651,14 @@ footer {
     #navbar {
         top: 0;
         left: 0;
+        position: absolute;
         background-color: #0e3456;
         width:100%;
-        z-index: 99;
-
-        height: 100px;
+        z-index: 99999;
+        padding-bottom: 20px;
+    }
+    header {
+        height: min-content;
     }
     #logoSmall {
         display: block;
@@ -663,7 +666,7 @@ footer {
         width: 100px;
         height: 30px;
 
-        top: 30%;
+        top: 20px;
         left: 5%;
     }
     #logoSmall2 {
