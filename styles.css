@@ -548,7 +548,6 @@ h2 span {
     #navbar {
         position: absolute;
         top: 0;
-        /* right: 0; */
         width:100%;
         
         background-color: #0e3456;
@@ -592,4 +591,15 @@ h2 span {
         font-weight: 700;
     }
 
+    header p {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    header div span, header h1 {
+        margin: 0;
+    }
+
+    .container2 {
+        padding: 50px 5px;
+    }
 }
