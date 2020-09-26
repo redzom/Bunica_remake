@@ -75,6 +75,42 @@ header {
     font-weight: 700;
 }
 
+
+
+
+
+.scrollDown {
+    height: 70px;
+    width: 40px;
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: goDown 1s infinite;
+
+
+}
+
+.scrollDown img {
+    max-width: 100%;
+}
+
+
+@keyframes goDown {
+    0% {}
+    25% {bottom:120px;}
+    50% {bottom: 125px;}
+    75% {bottom: 120px;}
+    100% {bottom: 130px;}
+}
+
+
+
+
+
+
+
 .red {
     display: flex;
     flex-direction: row;
