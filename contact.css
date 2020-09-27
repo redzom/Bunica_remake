@@ -106,9 +106,40 @@ header {
       CONTACT FORM
 ---------------- */
 
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding: 40px 20px;
+
+    justify-content: space-evenly;
+}
+
+.contact label {
+    max-width: 100%;
+}
+
+#name, #email, #phone-number, #title {
+    height: 45px;
+    width: 100%;
+    padding: 3px 4px;
+}
+
+#message {
+    width: 100%;
+    min-width: 50%;
+
+    height: 150px;
+}
+
+#agreed {
+    margin: 10px 5px;
+}
+
 /* Right side */
 
-.contact-right h1 {
+main h1  {
     font-size: 24px;
     padding: 0;
     margin: 0;
@@ -120,7 +151,12 @@ header {
     padding-bottom: 20px;
 }
 
-.contact-right h1::after {
+.contact-us {
+    padding: 40px;
+    width: 90%;
+}
+
+.contact-right h1::after, .contact-us h1::after {
     content: "";
     position: absolute;
     width: 85px;
@@ -140,14 +176,96 @@ header {
     padding-bottom: 10px;
 }
 
+/* Left side */
 
 
+.contact-left {
+    max-width: 60%;
+    flex: 1 1 auto;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+
+}
 
 
+.form-row {
+    max-width: 100%;
+    min-width: 55%;
+    flex: 1 1 auto;
+
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+.form-row-agreed {
+    max-width: 100%;
+    min-width: 55%;
+    flex: 1 1 auto;
+
+    padding: 0;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+}
+
+.form-sub-row {
+    max-width: 49%;
+    flex: 1 1 45%;
+
+}
+
+.radio-buttons {
+    padding-top: 20px;
+
+    width: 100%;
+    min-width: 70%;
+    flex: 1 1 auto;
+
+    justify-content: flex-start;
+
+    padding: 0;
+}
+
+.radio-buttons p {
+    margin: 0;
+    width: 100%;
+}
+
+.radio-buttons input {
+    margin-right: 20px;
+}
 
 
+.button {
+    max-width: 100%;
+    flex: 1 1 auto;
 
+    display: flex;
+    justify-content: flex-end;
+}
 
+form button {
+    color: white;
+    background-color: #0b60a9;
+    border-color: #0b60a9;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 0;
+    height: 44px;
+    width: 170px;
+}
 
 /* ----------------
       GALLERY
@@ -634,6 +752,47 @@ footer {
         max-width: 70%;
     }
 
+    .contact {
+        flex-direction: column;
+        min-width: 100%;
+        padding:20px
+    }
+
+    .contact-left {
+        max-width: 100%;
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .form-sub-row {
+        max-width: 100%;
+    }
+
+
+    .contact-right {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .contact-right h1::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+    
+        left: 50%;
+        top:70%;
+
+        transform: translateX(-50%);
+    
+        background: #0e3456;
+    }
 }
 
 
@@ -709,5 +868,31 @@ footer {
     }
     .header p {
         padding-top: 10px;
+    }
+
+    .contact-us {
+        text-align: center;
+        position: relative;
+        
+        padding: 0;
+        margin: 0 auto;
+        top: 80px;
+    }
+    .contact-us h1::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+    
+        left: 50%;
+        top:70%;
+
+        transform: translateX(-50%);
+    
+        background: #0e3456;
+    }
+
+    .contact {
+        margin-top: 80px;
     }
 }
